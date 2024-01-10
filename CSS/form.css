@@ -1,0 +1,28 @@
+.gender {
+    text-align: center; 
+    width: 150px;
+    margin-left: -8px;
+}
+
+label[for='address']{
+    vertical-align: top;
+}
+
+label[for="price"] {
+    text-align: center;
+}
+datalist {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+}
+input[type='range'] {
+	width: 200px;
+	margin: 0;
+}
+
+.range{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}

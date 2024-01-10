@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/form.css">
+    <title>Order form</title>
+    
+</head>
+<body>
+    <main>
+    <form>
+       <fieldset>
+        <legend>Personal info</legend>
+        <div>
+            <label for="fn">First Name</label>
+            <input type="text" id="fn">
+        </div>
+        <div>
+            <label for="ln">Last Name</label>
+            <input type="text" id="ln">
+        </div>
+        <div>
+            <label for="dtl">Birthday</label>
+            <input type="datetime-local" name="datetime-local" id="dtl">
+        </div>
+        <div class="gender">
+            <label for="gender-m">Gender</label>
+            <div>
+                <label for="gender-m">Male</label>
+                <input type="radio" id="gender-m" name="gender">
+                <label for="gender-f">Female</label>
+                <input type="radio" id="gender-f" name="gender">
+            </div>
+        </div>
+        <div>
+            <label for="choose-experience">Drive experience</label>
+            <select id="choose-experience">
+                <option value="---">---</option>
+                <option value="none">no experience</option>
+                <option value="less-than-2-years">less than 2 years</option>
+                <option value="more-than-2-years">more than 2 years</option>
+            </select>
+        </div>
+        
+       </fieldset>
+       <fieldset>
+        <legend>Contacts</legend>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone">
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea id="address" rows="5" cols="40"></textarea>
+        </div>
+       </fieldset>
+
+       <fieldset>
+        <legend>Car info</legend>
+        <div>
+            <label for="brand">Brand</label>
+            <select id="brand">
+                <option value="---">---</option>
+                <option value="ford">Ford</option>
+                <option value="bmw">BMW</option>
+                <option value="toyota">Toyota</option>
+            </select>
+        </div>
+        <div>
+            <label for="model">Model</label>
+            <select id="model">
+                <option value="---">---</option>
+                <option value="ford-mondeo-4">Ford Mondeo 4</option>
+                <option value="ford-fiesta-1">Ford Fiesta 1.0</option>
+                <option value="bmw-x5">BMW X5</option>
+                <option value="bmw-i4">BMW i4</option>
+                <option value="toyota-camry">Toyota Camry</option>
+                <option value="toyota-rav-4">Toyota RAV 4</option>
+            </select>
+        </div>
+        <div>
+            <label for="used">Used</label>
+            <input type="checkbox" id="used">
+        </div>
+        <div>
+            <label for="color">Color</label>
+            <div>
+                <label for="color">Red</label>
+                <input type="radio" id="color" name="color">
+                <label for="black">Black</label>
+                <input type="radio" id="black" name="color">
+                <label for="blue">Blue</label>
+                <input type="radio" id="blue" name="color">
+                <label for="white">White</label>
+                <input type="radio" id="white" name="color">
+                <label for="gray">Gray</label>
+                <input type="radio" id="gray" name="color">
+            </div>
+        </div>
+        <div class="range">
+            <label for="price">Price</label>
+            <input 
+                type="range" 
+                id="price" 
+                name="price"
+                min="10"
+				max="80"
+				step="10"
+				list="money"
+                >
+            <datalist id="money">
+                <option value="10" label="10"></option>
+                <option value="20" label="20"></option>
+                <option value="30" label="30"></option>
+                <option value="40" label="40"></option>
+                <option value="50" label="50"></option>
+                <option value="60" label="60"></option>
+                <option value="70" label="70"></option>
+                <option value="80" label="80"></option>
+            </datalist>
+        </div>
+       </fieldset>
+       <button type="reset">Cancel</button>
+       <button type="submit">Ok</button>
+    </form>
+</main>
+</body>
+</html>
