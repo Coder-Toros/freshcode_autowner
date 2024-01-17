@@ -1,15 +1,32 @@
-.gender {
-    text-align: center; 
-    width: 150px;
-    margin-left: -8px;
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
-
-label[for='address']{
-    vertical-align: top;
+.form-item{
+    min-height: 200px;
 }
-
-label[for="price"] {
-    text-align: center;
+.set-item{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+textarea,
+input:not([type="radio"]){
+width: 70%;
+}
+select{
+    width: 40%;
+}
+#used  {
+    margin-right: 170px;
+}
+.button{
+    max-width: 20%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
 }
 datalist {
 	display: flex;
@@ -20,9 +37,7 @@ input[type='range'] {
 	width: 200px;
 	margin: 0;
 }
-
 .range{
     display: flex;
     flex-direction: column;
-    width: 200px;
 }
